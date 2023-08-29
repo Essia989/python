@@ -30,7 +30,8 @@ def new_game():
     elif again == 0:
         quit()
     else:
-        print ("OOPS wrong entry game will end!")        
+        print ("OOPS wrong entry game will end!")
+        quit()
 
 new_game()
 
