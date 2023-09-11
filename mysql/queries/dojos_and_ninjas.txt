@@ -1,0 +1,21 @@
+
+INSERT into dojos (name) values ('Tunis'), ('Online'), ('Hybrid');
+
+DELETE from dojos where id = 1 AND WHERE id = 2 AND WHERE id = 3 ;
+
+DELETE from dojos where id = 1 OR id = 2 OR id = 3 ;
+
+INSERT into dojos (name) values ('Ariana'), ('Sousse'), ('Djerba');
+
+INSERT into ninjas (first_name, last_name, age, dojo_id) values ('Alex','Brain',32,4), ('Mays','McFee',23,4), ('Cedric','Lee',35,4);
+
+INSERT into ninjas (first_name, last_name, age, dojo_id) values ('Adele','Stewart',28,5), ('Yakine','Mahmoudi',24,5), ('Sara','Williams',30,5);
+
+INSERT into ninjas (first_name, last_name, age, dojo_id) values ('Salim','Ali',40,6), ('Dan','Daniels',34,6), ('Liam','Adams',30,6);
+
+SELECT * from ninjas WHERE dojo_id = 4;
+
+SELECT * from ninjas WHERE dojo_id = 6;
+
+SELECT dojo_id from ninjas WHERE id = 9;
+
