@@ -1,0 +1,22 @@
+body {
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
