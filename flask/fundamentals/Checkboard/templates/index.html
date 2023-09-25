@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            {% for i in range (0,x) %}
+                <tr>
+                    {% for j in range (0,y,+2) %}
+                        {% if i%2 == 1 %}
+                            <td>
+                                <div class="box" style="background-color: {{color1}};"></div>
+                            </td>
+                            <td>
+                                <div class="box" style="background-color: {{color2}};"></div>
+                            </td>
+                        {% else %}
+                            <td>
+                                <div class="box" style="background-color: {{color2}};"></div>
+                            </td>
+                            <td>
+                                <div class="box" style="background-color: {{color1}};"></div>
+                            </td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
