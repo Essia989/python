@@ -1,6 +1,9 @@
 # a cursor is the object we use to interact with the database
 import pymysql.cursors 
 # this class will give us an instance of a connection to our database
+
+DB = "dojos_and_ninjas_schema"
+
 class MySQLConnection:
     def __init__(self, db):
         # change the user and password as needed
@@ -20,6 +23,7 @@ class MySQLConnection:
                 query = cursor.mogrify(query, data)
                 print("Running Query:", query)
                 cursor.execute(query, data)
+                #print (data)
                 if query.lower().find("insert") >= 0:
                     # INSERT queries will return the ID NUMBER of the row inserted
                     self.connection.commit()
